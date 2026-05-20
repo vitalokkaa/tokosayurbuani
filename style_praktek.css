@@ -1,0 +1,370 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 5%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #16a34a;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1f2937;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #16a34a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9fafb;
+  color: hsl(215, 28%, 17%);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.subjudul {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 36px;
+}
+
+.tombol {
+  display: inline-block;
+  background-color: #16a34a; 
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 50px; 
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.tombol:hover {
+  background-color: #15803d; 
+  transform: translateY(-2px);
+}
+
+.tombol-full {
+  width: 100%;
+  text-align: center;
+}
+
+
+.hero {
+  min-height: calc(100vh - 60px); 
+  padding: 60px 5%;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.hero-teks {
+  flex: 1;
+}
+
+.hero-teks h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #14532d;
+  margin-bottom: 16px;
+}
+
+.hero-teks p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+.hero-img {
+  flex: 1;
+  max-width: 460px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  background-color: #dcfce7; 
+  min-height: 280px;
+}
+
+
+.section-produk {
+  padding: 72px 5%;
+  background-color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Hapus jarak antar border sel */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Baris header tabel (<thead>) */
+thead tr {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Sel isi tabel (<td>) */
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+/* Tombol + Tambah di dalam tabel */
+.btn-tambah {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-tambah:hover {
+  background-color: #15803d;
+  transform: scale(1.04);
+}
+
+.section-cara-pesan {
+  padding: 72px 5%;
+  background-color: #f0fdf4;
+}
+
+/* Reset numbering <ol> — kita buat styling sendiri */
+.langkah-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  counter-reset: langkah-counter; 
+}
+
+.langkah-list li {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  counter-increment: langkah-counter; 
+  position: relative;
+}
+
+/* Nomor bulat hijau di atas setiap langkah */
+.langkah-list li::before {
+  content: counter(langkah-counter); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+
+.section-kontak {
+  padding: 72px 5%;
+  background-color: #ffffff;
+}
+
+/* Dua kolom: info toko kiri, form kanan */
+.kontak-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/* Informasi toko */
+.kontak-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 16px;
+}
+
+.kontak-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.kontak-info li {
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+/* Tombol sosial media */
+.sosmed {
+  display: flex;
+  gap: 10px;
+}
+
+.sosmed a {
+  background-color: #dcfce7;
+  color: #14532d;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.sosmed a:hover {
+  background-color: #bbf7d0;
+}
+
+.sosmed a img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Kotak form dengan bayangan */
+#form-kontak {
+  background-color: #f9fafb;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Grup label + input */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* Semua input, textarea dalam form */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: inherit; /* Ikuti font body */
+  font-size: 0.88rem;
+  color: #1f2937;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+
+.footer {
+  background-color: #14532d;
+  color: #d1fae5;
+  text-align: center;
+  padding: 32px 5%;
+  font-size: 0.88rem;
+  line-height: 2;
+}
+
+
+/* RESPONSIVE — MEDIA QUERY Tablet (layar ≤ 900px) */
+@media (max-width: 900px) {
+  .langkah-list {
+    grid-template-columns: repeat(2, 1fr); /* 4 kolom → 2 kolom */
+  }
+  .kontak-wrap {
+    grid-template-columns: 1fr; /* 2 kolom → 1 kolom */
+  }
+}
+
+/* Mobile (layar ≤ 700px) */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column; /* Hero jadi vertikal */
+    text-align: center;
+    min-height: auto;
+    padding: 40px 5%;
+  }
+  .hero-teks h1 {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    display: none; /* Sembunyikan menu di HP */
+  }
+  .langkah-list {
+    grid-template-columns: 1fr; /* 1 kolom di HP */
+  }
+}

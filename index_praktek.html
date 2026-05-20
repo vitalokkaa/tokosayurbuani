@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Sayur Bu Ani</title>
+    <link rel="stylesheet" href="style_praktek.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="logo">🥬 Toko Sayur Bu Ani</span>
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#cara-pesan">Cara Pesan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section id="beranda" class="hero">
+      <div class="hero-teks">
+        <h1>Sayur Segar,<br />Harga Bersahabat 🌿</h1>
+        <p>
+          Langsung dari petani lokal. Diantar ke pintu rumah Anda setiap pagi!
+        </p>
+        <a href="#produk" class="tombol">Belanja Sekarang</a>
+      </div>
+
+      <!-- Ganti src dengan foto hero kamu -->
+      <img src="images/hero.jpg" alt="Sayur Segar Bu Ani" class="hero-img" />
+    </section>
+
+    <section id="produk" class="section-produk">
+      <h2>Produk Kami</h2>
+      <p class="subjudul">Dipanen pagi hari — dijamin segar!</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Produk</th>
+            <th>Satuan</th>
+            <th>Harga</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🌿 Bayam Hijau</td>
+            <td>per ikat (~200gr)</td>
+            <td>Rp 3.000</td>
+            <td><button class="btn-tambah">+ Tambah</button></td>
+          </tr>
+          <tr>
+            <td>🥕 Wortel</td>
+            <td>per kg</td>
+            <td>Rp 8.000</td>
+            <td><button class="btn-tambah">+ Tambah</button></td>
+          </tr>
+          <tr>
+            <td>🌿 Kangkung</td>
+            <td>per ikat (~300gr)</td>
+            <td>Rp 2.500</td>
+            <td><button class="btn-tambah">+ Tambah</button></td>
+          </tr>
+          <tr>
+            <td>🍅 Tomat Merah</td>
+            <td>per kg</td>
+            <td>Rp 12.000</td>
+            <td><button class="btn-tambah">+ Tambah</button></td>
+          </tr>
+          <tr>
+            <td>🌶️ Cabai Merah</td>
+            <td>per ons</td>
+            <td>Rp 5.000</td>
+            <td><button class="btn-tambah">+ Tambah</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cara-pesan" class="section-cara-pesan">
+      <h2>Cara Pemesanan</h2>
+      <p class="subjudul">Mudah dan cepat!</p>
+
+      <ol class="langkah-list">
+        <li>
+          <strong>Pilih Produk</strong>
+          <p>Lihat daftar sayuran dan klik tombol Tambah.</p>
+        </li>
+        <li>
+          <strong>Hubungi via WhatsApp</strong>
+          <p>Kirim pesanan kamu ke nomor 0812-3456-7890.</p>
+        </li>
+        <li>
+          <strong>Konfirmasi Pesanan</strong>
+          <p>Kami akan konfirmasi stok dan harga total.</p>
+        </li>
+        <li>
+          <strong>Diantar ke Rumah!</strong>
+          <p>Sayur segar tiba dalam 1–2 jam. Bayar di tempat.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="kontak" class="section-kontak">
+      <h2>Hubungi Kami 📞</h2>
+      <p class="subjudul">Ada pertanyaan? Kirim pesan di bawah ini.</p>
+      <div class="kontak-wrap">
+        <!-- Info Toko — contoh <ul> tanpa urutan -->
+        <div class="kontak-info">
+          <h3>Informasi Toko</h3>
+          <ul>
+            <li>📍 Jl. Pasar Anyar No. 12, Bogor</li>
+            <li>📱 WhatsApp: 0812-3456-7890</li>
+            <li>📧 tokosayurbuani@gmail.com</li>
+            <li>⏰ Senin–Sabtu, 06.00–18.00 WIB</li>
+          </ul>
+
+          <!-- Contoh penggunaan <a> untuk link sosmed dengan gambar PNG -->
+          <div class="sosmed">
+            <a href="#"
+              ><img src="https://cdn.simpleicons.org/instagram" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="https://cdn.simpleicons.org/tiktok" alt="TikTok"
+            /></a>
+            <a href="#"
+              ><img src="https://cdn.simpleicons.org/shopee" alt="Shopee"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <form id="form-kontak">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Contoh: Budi Santoso"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor WhatsApp</label><br />
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              placeholder="Contoh: 08123456789"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label><br />
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="4"
+              placeholder="Tulis pesan kamu di sini..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="tombol tombol-full">
+            📨 Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Toko Sayur Bu Ani &mdash; Bogor, Jawa Barat</p>
+      <p>Dibuat dengan <strong>HTML, CSS &amp; JavaScript</strong> 💚</p>
+    </footer>
+  </body>
+</html>
